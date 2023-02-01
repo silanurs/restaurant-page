@@ -54,12 +54,10 @@ img {
     height: 300px;
     border-radius: 15px;
     z-index:2;
+    box-shadow: 0 4px 8px 0 rgba(209, 177, 120, 1), 0 6px 20px 0 rgba(209, 177, 120, 1);
     
 }
-img:hover {
-    box-shadow: 0 4px 8px 0 rgba(209, 177, 120, 1), 0 6px 20px 0 rgba(209, 177, 120, 1);
 
-}
 .caption {
     text-shadow: 2px 2px 2px #bb9f3b;
 }
