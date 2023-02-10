@@ -2,8 +2,10 @@ export default function createMenu(){
     const container = document.querySelector('#content');
     const menu = document.querySelector('.menu');
     container.classList.add('active-menu')
-    
+    container.classList.remove('active-about')
     menu.removeEventListener('click', createMenu)
+    const gridcontainer = document.createElement('div');
+    gridcontainer.classList.add('grid');
     const menudiv = document.createElement('div');
     menudiv.classList.toggle('menudiv');
     const menuItems = ["imgs/shish-kebab.jpg", "imgs/iskender.jpg", "imgs/doner-kebab.jpg", "imgs/eggplant-kebab.jpg", "imgs/meat.jpg", 
@@ -74,9 +76,9 @@ export default function createMenu(){
     item7.append(food7, caption7);
     menudiv.append(item7);
 
+   gridcontainer.appendChild(menudiv)
 
-
-container.appendChild(menudiv);
+container.appendChild(gridcontainer);
 
 
 return container;

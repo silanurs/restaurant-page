@@ -2,7 +2,8 @@ export default function createContact() {
     const container = document.querySelector('#content');
     const contactdiv = document.createElement('div');
     contactdiv.classList.add('contactdiv')
-   
+    container.classList.remove('active-about');
+    container.classList.remove('active-menu')
     const telephone = document.createElement('p');
     telephone.textContent = '📞 123 456 789';
     const address = document.createElement('p');

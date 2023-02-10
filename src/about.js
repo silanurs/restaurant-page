@@ -4,6 +4,7 @@ export default function createAbout(){
     const about = document.querySelector('.about');
     
     container.classList.add('active-about');
+    container.classList.remove('active-menu')
     about.removeEventListener('click', createAbout);
     const description = document.createElement('div');
     description.classList.add('description');
@@ -18,6 +19,7 @@ export default function createAbout(){
     const div = document.createElement('div');
     div.classList.add('aboutdiv');
     const img = document.createElement('img');
+    img.classList.add('grill');
     img.src= "imgs/grill.jpg";
     const para = document.createElement('p');
     para.textContent = 'One and Only';
